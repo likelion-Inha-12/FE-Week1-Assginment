@@ -7,6 +7,7 @@
     <style>
       #wrapper {
         width: 700px;
+        flex-wrap: wrap;
       }
       .box {
         padding: 15px;
@@ -14,27 +15,54 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
+        display: flex;
+      }
+      .box1-3 {
+        display: flex;
+      }
+      .box2-4 {
+        display: flex;
+        justify-content: space-between;
       }
       .box1 {
         background-color: #3689ff;
+        display: inline-block;
+        /* width: 450px; */
+        flex-grow: 3;
+        margin-right: 0;
       }
       .box2 {
         background-color: #00cf12;
+        /* display: inline-block; */
+        width: 200px;
+        height: 200px;
+        /* justify-content: space-between; */
       }
       .box3 {
         background-color: #ff9019;
+        display: inline-block;
+        /* width: 170px; */
+        flex-grow: 1;
+        margin-left: 0;
       }
       .box4 {
         background-color: #ffd000;
+        width: 185px;
+        height: 200px;
+        margin: 0;
       }
     </style>
   </head>
   <body>
     <div id="wrapper">
-      <div class="box box1">box1</div>
-      <div class="box box2">box2</div>
-      <div class="box box3">box3</div>
-      <div class="box box4">box4</div>
+      <div class="box1-3">
+        <div class="box box1">box1</div>
+        <div class="box box3">box3</div>
+      </div>
+      <div class="box2-4">
+        <div class="box box2">box2</div>
+        <div class="box box4">box4</div>
+      </div>
     </div>
   </body>
 </html>
