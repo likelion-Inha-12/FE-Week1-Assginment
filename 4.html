@@ -4,11 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        background-color: aquamarine;
+        text-align: center;
+        margin: 0;
+        height: 50px;
+        justify-content: center;
+        align-content: center;
+      }
+      ul {
+        background-color: antiquewhite;
+        display: flex;
+        text-align: end;
+        margin: 0;
+        height: 40px;
+        justify-content: end;
+      }
+      li {
+        display: inline-block;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+      a {
+        text-decoration: none;
+        color: navy;
+        margin: 5px;
+      }
+      form {
+        background-color: greenyellow;
+        margin: 0;
+        height: 500px;
+      }
+      .input-container {
+        padding: 20px;
+      }
+      input {
+        display: block;
+        height: 50px;
+        text-align: center;
+        margin: 0;
+      }
+      .id {
+        margin-bottom: 10px;
+      }
+      .pw {
+        margin-top: 5px;
+      }
+      .section2 {
+        background-color: palevioletred;
+        margin: 0;
+        height: 200px;
+      }
+      .section2 > h2 {
+        margin-top: 0;
+      }
+      footer {
+        background-color: skyblue;
+        height: 100px;
+      }
+      footer > p {
+        margin: 0;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>*** 블로그 입니다</header>
     <nav>
-      <ul>
+      <ul class="list">
         <li><a href="#">HOME</a></li>
         <li><a href="#">DIARY</a></li>
         <li><a href="#">MEDIA</a></li>
@@ -17,11 +84,13 @@
     <article>
       <section>
         <form action="">
-          <input type="text" placeholder="아이디" />
-          <input type="password" placeholder="비밀번호" />
+          <div class="input-container">
+            <input class="id" type="text" placeholder="아이디" />
+            <input class="pw" type="password" placeholder="비밀번호" />
+          </div>
         </form>
       </section>
-      <section>
+      <section class="section2">
         <h2>안녕하세요!</h2>
         <p>HTML 실습 과제입니다.</p>
       </section>
